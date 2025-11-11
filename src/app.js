@@ -39,6 +39,6 @@ app.get('/map', (_, reply) => {
     return reply.view('map');
 });
 
-app.listen({ port: 4040 }, (err, address) => {
+app.listen({ port: 4040, host: '0.0.0.0' }, (err, address) => {
     if (err) console.err(err);
 });
