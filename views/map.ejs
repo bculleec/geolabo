@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>geolabo</title>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.7.0/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.7.0/ol.css">
+    <style>
+        <%- include('_css.css') %> 
+    </style>
+  </head>
+  <body>
+    <div class="screen-elements">
+        <div class="header">
+          <h1 class="title" onclick="{ window.location.href='/' }">geolabo!</h1>
+        </div>
+        <div id="map"></div>
+        <div class="chat-elements">
+          <div id="chat-message-display"></div>
+          <div id="chatbot-input">
+              <textarea placeholder="Show me where the dodo went extinct."></textarea>
+          </div>
+        </div>
+        
+    </div>
+
+    <script>
+        <%- include('map.js') %> 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "groundwork-labs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/view": "^11.1.1",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "fastify": "^5.6.2",
+    "ol": "^10.7.0",
+    "openai": "^6.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

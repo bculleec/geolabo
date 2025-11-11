@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geolabo!</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: radial-gradient(circle at center, #1a102a 0%, #0a0610 100%);
+      --text: #eaeaea;
+      --accent: #6b5b95;
+      --hover: #bca9ff;
+      --font: 'Inter', system-ui, sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 500px;
+      line-height: 1.6;
+      margin: 0 20px 40px;
+      color: #cfcfcf;
+    }
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text);
+      background: var(--accent);
+      padding: 12px 24px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    a:hover {
+      background: var(--hover);
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+  <h1>geolabo!</h1>
+  <p>
+    The most cracked AI geographical companion.
+  </p>
+  <div class="buttons">
+    <a href="https://github.com/bculleec/geolabo" target="_blank">View Source Code</a>
+    <a href="/map">🗺️ Start Exploring</a>
+  </div>
+</body>
+</html>
