@@ -5,6 +5,7 @@ import { resolve } from "node:path";
 import { fastify } from 'fastify';
 import { fastifyView } from '@fastify/view';
 import { fastifyRateLimit} from '@fastify/rate-limit';
+import { fastifyStatic } from '@fastify/static';
 import ejs from 'ejs';
 
 let __dirname = import.meta.dirname;
@@ -26,7 +27,11 @@ app.register(fastifyView, {
     root: path.join(__dirname, 'views')
 });
 
-await app.register(import('@fastify/rate-limit'), {
+app.register(fastifyStatic, {
+    root: path.join(__dirname, 'public')
+});
+
+await app.register(fastifyRateLimit, {
   max: 100,
   timeWindow: '1 minute'
 })
