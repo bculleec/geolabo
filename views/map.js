@@ -17,6 +17,7 @@ const map = new ol.Map({
 });
 
 const chatbotInput = document.querySelector('#chatbot-input textarea');
+renderChatUi('Hi there');
 
 // Input listeners
 chatbotInput.addEventListener('keypress', async ( e ) => {
