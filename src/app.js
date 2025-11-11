@@ -10,9 +10,11 @@ import ejs from 'ejs';
 let __dirname = import.meta.dirname;
 __dirname = path.join(__dirname, '..');
 
-dotenv.config({
-    path: resolve(__dirname, '.env')
-});
+if (process.env.NODE_ENV !== 'production') {
+    dotenv.config({
+        path: resolve(__dirname, '.env')
+    });
+}
 
 
 import { chatRoutes } from "./chatRoutes.js";
