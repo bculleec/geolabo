@@ -1,5 +1,4 @@
-# geolabo!
-geolabo is an AI powered GIS companion (the most cracked)
+## Geolocation Conversational Assistant.
 
 Ask questions about the world and watch the map respond by narrating regions in real time.
 
